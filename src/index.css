@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* FONT FACE - IMPORTING LOCAL FONTS */
+@font-face {
+  font-family: "bold";
+  src: local("Merriweather-Bold"),
+    url("./assets/fonts/Merriweather-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BoldItalic";
+  src: local("Merriweather-BoldItalic"),
+    url("./assets/fonts/Merriweather-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "light";
+  src: local("Merriweather-Light"),
+    url("./assets/fonts/Merriweather-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "lightItalic";
+  src: local("Merriweather-LightItalic"),
+    url("./assets/fonts/Merriweather-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "black";
+  src: local("SourceSansPro-Black"),
+    url("./assets/fonts/SourceSansPro-Black.ttf") format("truetype");
+}
+
+/* RESET */
+body {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 38px;
+  color: #212931;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  /* font-family: bold; */
+  font-style: normal;
+}
+h1 {
+  font-size: 80px;
+  line-height: 80px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 70.4px;
+  color: #212931;
+}
+
+h3 {
+  font-size: 12.8px;
+  line-height: 19.2;
+  color: #717981;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*? CONTAINER */
+.container {
+  width: 85%;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 475px) {
+  .container {
+    width: 95%;
+  }
+}
