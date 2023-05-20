@@ -1,0 +1,41 @@
+.border-right {
+  border-top: 2px solid #9094982f;
+  border-right: 2px solid #9094982f;
+  border-bottom: 2px solid #9094982f;
+}
+
+.border-left {
+  border-top: 2px solid #9094982f;
+  border-bottom: 2px solid #9094982f;
+}
+
+.post {
+  @apply w-full md:w-1/2 p-5 py-8 md:p-12 text-center;
+}
+
+.postDate {
+  @apply font-light font-semibold text-sm py-2 md:py-4;
+}
+.postTitle {
+  font-size: 1.3rem;
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .border-right {
+    border-top: 2px solid #9094982f;
+    border-right: none;
+    border-bottom: 2px solid #9094982f;
+  }
+
+  .border-left {
+    border-top: none;
+    border-bottom: 2px solid #9094982f;
+  }
+  .postTitle {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+  
+}

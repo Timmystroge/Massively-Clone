@@ -29,54 +29,52 @@
     url("./assets/fonts/SourceSansPro-Black.ttf") format("truetype");
 }
 
+
 /* RESET */
 body {
   font-size: 16px;
   font-style: normal;
-  line-height: 38px;
   color: #212931;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 h1,
 h2,
 h3 {
-  /* font-family: bold; */
   font-style: normal;
 }
 h1 {
   font-size: 80px;
-  line-height: 80px;
-  color: #ffffff;
 }
-
 h2 {
   font-size: 64px;
-  line-height: 70.4px;
-  color: #212931;
 }
-
 h3 {
   font-size: 12.8px;
-  line-height: 19.2;
-  color: #717981;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 
 /*? CONTAINER */
-.container {
-  width: 85%;
+.container_wrapper,
+.container_main_section  {
+  width: 71.5%;
+  position: relative;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
-  .container {
+  .container_wrapper {
     width: 90%;
+  }
+  .container_main_section {
+    width: 100%;
   }
 }
 @media (max-width: 475px) {
-  .container {
+  .container_wrapper {
     width: 95%;
   }
 }

@@ -1,8 +1,13 @@
+import Header from "./components/Header/Header";
+import MainSection from "./components/body/MainSection";
+import Navbar from "./components/navbar/Navbar";
+
 function App() {
   return (
     <>
-      <h1 className="text-secondary font-black">THIS IS MASSIVELY!</h1>
-      <p className="text-test lol">what you want free</p>
+      <Navbar />
+      <Header />
+      <MainSection />
     </>
   );
 }
