@@ -1,5 +1,6 @@
 import "./headline.css";
 import headlinePassport from "../../assets/images/main-section.jpg";
+import FullStoryBtn from "../elements/FullStoryBtn";
 const Headline = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const Headline = () => {
         </div>
 
         <div className="mt-10">
-          <h1 className="headline" >
+          <h1 className="headline">
             and this is a <br /> massive headline
           </h1>
           <p className="headlineText">
@@ -28,12 +29,8 @@ const Headline = () => {
               className="w-full"
             />
           </div>
-          <div className="fullstory flex justify-center">
-            <a href="">
-              <button className="uppercase border-2 border-primary py-3 px-8 font-black text-sm hover:bg-primary hover:text-white tracking-widest transition ease duration-500">
-                full story
-              </button>
-            </a>
+          <div className="text-center">
+            <FullStoryBtn value="full story" />
           </div>
         </div>
       </section>

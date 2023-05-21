@@ -9,6 +9,7 @@
   border-bottom: 2px solid #9094982f;
 }
 
+
 .post {
   @apply w-full md:w-1/2 p-5 py-8 md:p-12 text-center;
 }
@@ -22,6 +23,10 @@
   margin: 0 auto;
 }
 
+.postText {
+  font-size: 0.95rem;
+  line-height: 1.9rem;
+}
 @media (max-width: 767px) {
   .border-right {
     border-top: 2px solid #9094982f;
@@ -37,5 +42,8 @@
     font-size: 1.1rem;
     width: 90%;
   }
-  
+  .postText {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
 }
